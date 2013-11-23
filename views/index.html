@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>cms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+        
+        <style>
+            body {
+                padding-top: 60px;
+            }
+        </style>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="#">the code company</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active" data-item="analytics"><a href="#">hemingway</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- socket.io -->
+
+            <!--
+            <div id="socket" class="section">
+                <div class="page-header"><h1>Activity</h1></div>
+
+                <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+                <script>
+                    var socket = io.connect('http://api.39-120.com:8080');
+                    socket.on('connect', function () {
+                        socket.on('request', function(msg) {
+                            var content = '<li>' + msg.date + ' - ' + msg.udid + ' - ' + msg.uri + '</li>';
+                            $(content).hide().prependTo('#live_feed').fadeIn();
+                        });
+                    });
+                </script>
+
+                <div id="activity" class="section">
+                    <pre id="live_feed" class="prettylog">
+                    </pre>
+                </div>
+            </div>
+
+
+            <div id="analytics" class="section">
+                <div class="page-header"><h1>Analytics</h1></div>
+
+                <h3>Total Requests</h3>
+                <div id="chart">
+                    <canvas id="request_chart" width="1150" height="200"></canvas>
+                </div>
+
+                <div class="page-header"></div>
+
+                <h3>Average Response Times</h3>
+                <div id="chart">
+                    <canvas id="response_chart" width="1150" height="200"></canvas>
+                </div>
+
+                <div class="page-header"></div>
+
+                <div id="api_performance"></div>
+            </div>
+            -->
+
+            <div id="transactions" class="section">
+                <div class="page-header"><h1>Logs</h1></div>
+                <div id="log_table"></div>
+            </div>
+        </div>
+
+        <!-- javascript -->
+        <script src="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+        <script src="https://raw.github.com/nnnick/Chart.js/master/Chart.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!--<script src="lib/backbone-min.js"></script>-->
+        <script src="lib/underscore-min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
