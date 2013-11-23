@@ -1,7 +1,7 @@
 var config = require('./config');
 
 exports = module.exports = function(api) {
-    require('./routes/jkyau')(api);
+    require('./routes/vapor')(api);
 
     api.get('/'+api.get('api_version')+'/api/:resource/:action?', function(req, res) {
         var resource = req.params.resource;
