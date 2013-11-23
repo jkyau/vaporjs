@@ -1,3 +1,3 @@
 Vapor JS
 ====
-API Interface in node.js and express. 
+Lightweight promise based API framework for node.js
